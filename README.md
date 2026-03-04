@@ -1,5 +1,8 @@
 # Cloud Cost Predictor (DATAFLOW)
 
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://dataflow-otka.onrender.com)
+**Live Application**: [https://dataflow-otka.onrender.com](https://dataflow-otka.onrender.com)
+
 A Streamlit web application designed to predict Cloud Server Operational Costs using a pre-trained Multiple Linear Regression model. 
 
 ## Features
