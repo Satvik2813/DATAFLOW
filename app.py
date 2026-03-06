@@ -79,22 +79,26 @@ def set_bg_and_style():
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1.5rem;
+        gap: clamp(0.5rem, 3vw, 1.5rem);
         margin-bottom: 0.5rem;
+        flex-wrap: nowrap;
+        width: 100%;
     }}
     
     .header-logo {{
-        width: 60px;
-        height: 60px;
+        width: clamp(40px, 10vw, 60px);
+        height: clamp(40px, 10vw, 60px);
         border-radius: 12px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        flex-shrink: 0;
     }}
     
     h1 {{
         color: #FFFFFF;
         font-weight: 800; /* Bold */
         letter-spacing: 0.01em; /* Slightly increased */
-        font-size: 52px !important; /* 52px */
+        font-size: clamp(28px, 8vw, 52px) !important; /* Responsive font scaling */
+        white-space: nowrap; /* Prevent word breaking */
         text-align: center;
         margin: 0;
         text-shadow: 0 4px 12px rgba(0,0,0,0.4);
